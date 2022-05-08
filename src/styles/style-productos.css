@@ -1,6 +1,7 @@
+
 nav.barra-de-productos {
     display: flex;
-    align-items: space-between;
+    flex-direction: row;
     width: 75%;
     border-radius: 10px;
     background: #D5D8DC;
@@ -26,11 +27,19 @@ nav.barra-de-productos a:hover{
 nav.barra-de-productos  a.boton-barra-de-productos {
     padding: 20px 20px;
     border-radius: 10px;
-}  
+    cursor: pointer;
+}
+
+/*Cada que se selecciona una pestaña esta se marca con un color distintivo*/
+nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
+    background-color: #ABB2B9;
+    border-bottom: #17223B solid 10px;
+    color: #eee;
+}
 
 /* Cada vez que el cursor este encima da informacion del producto */
 .contenedor-productos{
-    width: 100%;
+    width: 76%;
     background-color: var(--color-texto-botones);
     display: flex;
     justify-content: center;
@@ -42,16 +51,16 @@ nav.barra-de-productos  a.boton-barra-de-productos {
     text-align: center;
     overflow: hidden;
     position: relative;
-    margin: 1.5%;
+    margin: .7%;
 }
-img.imagen-productos{
+.contenedor-productos img{
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
 } 
 .productos .mensaje-productos{
     width: 0%;
-    height: 100%;
+    height: 98%;
     background-color: rgba(0, 0, 0, 0.445);
     position: absolute;
     top: 0;
@@ -75,4 +84,10 @@ img.imagen-productos{
 }
 .productos:hover .mensaje-productos{
     width: 100%;
+} 
+@media screen and (max-width: 600px) {
+    .nav.barra-de-productos{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
 }

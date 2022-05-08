@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box-titulo-servicios {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    background-color: green;
+    position: relative;
+}
+
+div h1.titulo-servicios {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 40%;
+    transform: translateX(-40%) translateY(-40%);
+}
+
+div p.descripcion-titulo-servicios {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 40%;
+    transform: translateX(-40%) translateY(-40%);
+}
+
+
+
+
+
+
+
+
+
+
+/* No toquen nada perras */
