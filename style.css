@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+:root {
+    --color-primario: #17223B;
+    --color-primario-hover: #12192c;
+    --color-secundario: #eee;
+    --color-texto-botones: #EEE;
+    --color-texto-primario: #17223B;
+    --color-texto-primario-oscuro: #fff;
+    --color-texto-secundario: #000;
+    --color-texto-secundario-oscuro: #eee;
+    --titulos: 40px;
+    --subtitulos: 30px;
+    --texto: 20px;
+    --color-cuadros: #713112;
+}
+
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    background: var(--color-secundario);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+/* Estilos del header (barra de navegacion e imagen) */
+
+nav.barra-de-navegacion {
+    position:sticky;
+    top: 0;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.barra-de-navegacion a {
+    color: var(--color-texto-botones);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+img.imagen-fondo {
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a.boton-de-direccion {
+    padding: 20px 10px;
+    /*espacio alrededor texto*/
+    background-color: var(--color-primario);
+    /*color botón*/
+    color: var(--color-texto);
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    border: none;
+    /*quitar borde*/
+    font-size: 20px;
+    
+}
+
+a.boton-de-direccion#boton-final{
+    margin-right: 10px;
+}
+
+a.boton-de-direccion:hover {
+    background-color: var(--color-primario-hover);
+}
+
+
+
+/* Estilos del cuerpo principal */
+
+.contenido-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contenido-principal h2{
+    font-size: var(--titulos);
+    font-weight: bold;
+    color: var(--color-texto-primario);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contenido-principal p{
+    font-size: var(--texto);
+    color: var(--color-texto-secundario);
+    margin: 20px 0;
+    text-align: center;
+    width: 60%;
+}
+
+.contenido-principal .contenedor-tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contenedor-tarjetas .tarjeta{
+    width: 40%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+}
+
+.tarjeta h3{
+    font-size: var(--subtitulos);
+    font-weight: bold;
+    color: var(--color-texto-primario);
+}
+
+
+/* Estilos del footer */
+.pie-pagina{
+    width: 100%;
+    background-color: var(--color-primario);
+}
+.pie-pagina .informacion-general{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px,0px;
+}
+.pie-pagina .informacion-general .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .informacion-general .box figure img{
+    width: 120px;
+}
+.pie-pagina .informacion-general .box h2{
+    color: var(--color-texto-botones);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .informacion-general .box p{
+    color: var(--color-texto-secundario-oscuro);
+    margin-bottom: 10px;
+}
+.pie-pagina .informacion-general .redes-sociales a{
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--color-texto-botones);
+    margin-right: 10px;
+    background-color: var(--color-primario-hover) ;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .informacion-general .redes-sociales a:hover{
+    color: brown;
+}
+
+.pie-pagina .informacion-general .redes-sociales #youtube:hover{
+    color: red;
+}
+
+.pie-pagina .informacion-general .redes-sociales #facebook:hover{
+    color: #14a2f9;
+}
+
+.pie-pagina .informacion-general .redes-sociales #twitter:hover{
+    color: #00aced;
+}
+
+.pie-pagina .informacion-general .redes-sociales #instagram:hover{
+    color: #d50fc8;
+}
+
+.pie-pagina .informacion-legal{
+    background-color:var(--color-primario-hover) ;
+    padding: 30x, 10px;
+    text-align: center;
+    color:var(--color-texto-botones) ;
+}
+.pie-pagina .informacion-legal small{
+    font-size: 16px;
+}
+/* MediaQuerys */
+@media screen and (max-width: 800px){
+    .pie-pagina .informacion-general{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px, 0px;
+    }
+}
