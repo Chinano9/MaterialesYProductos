@@ -1,0 +1,30 @@
+nav.barra-de-productos {
+    display: flex;
+    align-items: space-between;
+    width: 75%;
+    border-radius: 10px;
+    background: #D5D8DC;
+}
+
+nav.barra-de-productos a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Cada vez que el cursor se encima sobr cada opcion cambia de color */
+nav.barra-de-productos a:hover{
+    background-color: #ABB2B9;
+    color: #eee;
+}
+
+nav.barra-de-productos  a.boton-barra-de-productos {
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
