@@ -9,9 +9,9 @@
     --color-texto-primario-oscuro: #fff;
     --color-texto-secundario: #000;
     --color-texto-secundario-oscuro: #eee;
-    --titulos: 40px;
-    --subtitulos: 30px;
-    --texto: 20px;
+    --titulos: 30px;
+    --subtitulos: 20px;
+    --texto: 15px;
     --color-cuadros: #713112;
 }
 
@@ -137,7 +137,7 @@ a.boton-de-direccion:hover {
 }
 
 .contenedor-tarjetas .tarjeta{
-    width: 40%;
+    width: 30%;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -151,6 +151,11 @@ a.boton-de-direccion:hover {
     font-weight: bold;
     color: var(--color-texto-primario);
 }
+
+/* #nosotros { 
+    width: 100%;
+    height: 100%;
+} */
 
 /* Estilos del footer */
 
@@ -180,7 +185,7 @@ a.boton-de-direccion:hover {
     align-items: center;
 }
 .pie-pagina .informacion-general .box figure img{
-    width: 120px;
+    width: 100px;
 }
 .pie-pagina .informacion-general .box h2{
     color: var(--color-texto-botones);
@@ -237,7 +242,7 @@ a.boton-de-direccion:hover {
 /* MediaQuerys */
 @media screen and (max-width: 800px){
     .pie-pagina .informacion-general{
-        width: 90%;
+        width: 50%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px, 0px;
