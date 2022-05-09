@@ -23,8 +23,8 @@
         <label for="asunto">Asunto</label>
         <input type="text" name="asunto" placeholder="Asunto">
         <label for="mensaje">Mensaje</label>
-        <textarea name="mensaje" placeholder="Mensaje"></textarea>
-        <input type="submit" value="Enviar" name="enviar">
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+        <input id="boton" type="submit" value="Enviar" name="enviar">
     </form>
     <?php
     include('email.php');

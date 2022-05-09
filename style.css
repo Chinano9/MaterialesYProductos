@@ -131,16 +131,17 @@ a.boton-de-direccion:hover {
 }
 
 .contenido-principal .contenedor-tarjetas{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
     vertical-align: middle;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
     align-items: center;
     width: 100%;
 }
 
 .contenedor-tarjetas .tarjeta{
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

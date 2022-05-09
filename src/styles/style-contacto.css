@@ -38,22 +38,48 @@ a {
 .redireccion{
     font-size: var(--titulos);
     font-weight: bold;
-    color: var(--color-texto-primario);
+    color: var(--color-texto-secundario-oscuro);
     margin: 50px 0;
     text-align: right;
 }
 
-.correo {
-    margin: 10px;
-    border: rgb(1, 1, 1);
-    border-radius: 20px;
+/* .columnas{
+    column-count: 2;
+    column-width: 300px;
 }
-
 #map{
-    margin: 100px;
-    border: 1;
-    border-color: #fff;
+    margin: 150px;
+} */
+
+/* .correo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+*/
+#correo{
+    border: 0px;
+    
+}
+/*
+.facebook{
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 250px;
+    top: 400px;
+}
+.ig {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 250px;
+    top: 260px;
+}  */
+
 /* Estilos del footer */
 
 .pie-pagina{
@@ -145,4 +171,13 @@ a {
         grid-gap: 30px;
         padding: 35px, 0px;
     }
+}
+
+.columnas{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    width: 100%;
 }

@@ -52,10 +52,10 @@ boton_empaque.addEventListener("click", () => {
     colocarClase("empaque");
 });
 
-//Redireccionar a un producto.
-// function redireccionar(url){
-//     window.location.href = url;
-// }
+// Redireccionar a un producto.
+function redireccionar(url){
+    window.location.href = url;
+}
 
 //esta funcion coloca la clase "seleccionada", lo cual hace que el boton se muestre como seleccionado
 //para que el usuario pueda saber que elemento selecciono
