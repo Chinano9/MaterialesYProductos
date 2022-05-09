@@ -45,6 +45,7 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
     justify-content: center;
     align-items: center;
 }
+
 .productos{
     width: 30%;
     height: 50%;
@@ -52,26 +53,31 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
     overflow: hidden;
     position: relative;
     margin: .7%;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(156, 152, 152, 0.8);
 }
+
 .contenedor-productos img{
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
 } 
+
 .productos .mensaje-productos{
-    width: 0%;
-    height: 98%;
-    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.500);  ;
     position: absolute;
     top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: center;
-    transition: .2s all;
+    opacity: 0;
+    transition: 0.5s ;
 }
+
 .productos h3{
     color: var(--color-secundario);
     text-shadow: var(--color-texto-secundario);
@@ -79,15 +85,22 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
     text-transform: uppercase;
     display: none;
 }
+
 .productos:hover h3{
     display: block;
 }
+
 .productos:hover .mensaje-productos{
-    width: 100%;
+    opacity: 1
 } 
-@media screen and (max-width: 600px) {
-    .nav.barra-de-productos{
+
+.oculto{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    nav.barra-de-productos{
         width: 100%;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 }

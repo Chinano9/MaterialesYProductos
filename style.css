@@ -43,6 +43,7 @@ nav.barra-de-navegacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 nav.barra-de-navegacion a {

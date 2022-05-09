@@ -6,12 +6,20 @@
         $telefono = $_POST['telefono'];
         $correo = $_POST['correo'];
         $asunto = $_POST['asunto'];
+        
         $mensaje = $_POST['mensaje'];
         if(!empty($nombre) && !empty($apellido) && !empty($telefono) && !empty($email) && !empty($asunto) && !empty($mensaje)){
+
+            $mensaje = "Correo de la persona: ".$correo."<br>";
+            $mensaje .= "Nombre: ".$nombre."<br>";
+            $mensaje .= "Apellido: ".$apellido."<br>";
+            $mensaje .= "Telefono: ".$telefono."<br>";
+            $mensaje .= "Mensaje: ".$_POST['mensaje']."<br>";
+
             $header = "From: " . $email . "\r\n";
             $header .= "Reply-To: " . $email . "\r\n";
             $header .= "X-Mailer: PHP/" . phpversion();
-            $mail = mail($email, $asunto, $mensaje, $header);
+            $mail = mail("materialesyproductos.myp@gmail.com", $asunto, $mensaje, $header);
 
             if($mail){
                 echo "Mensaje enviado";
