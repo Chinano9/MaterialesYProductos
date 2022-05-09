@@ -6,11 +6,14 @@
 /* div contenedor del h1 y p del titulo y descripcion */
 
 .box-titulo-servicios {
-    width: 400px;
+    width: 600px;
     height: 200px;
     margin: 10px auto;
-    background-color: green;
-    position: relative;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* titulo de servicios*/
@@ -20,9 +23,6 @@ div h1.titulo-servicios {
     font-size: 3em;
     text-align: center;
     position: relative;
-    top: 30%;
-    left: 30%;
-    transform: translateX(-30%) translateY(-30%);
 }
 
 /* lineas acompañadas del titulo como decoracion */
@@ -34,83 +34,43 @@ h1::after, h1::before {
     height: 3px;
     background-color: #000;
     top: 0.6em;
-
 }
 
 h1::before {
-    left: -50px;
+    left: -150px;
 }
 
 h1::after {
-    right: -50px;
+    right: -150px;
 }
 
 /* descripcion debajo del titulo */
 
 div p.descripcion-titulo-servicios {
+    width: 500px;
     font-size: 20px;
     font-family: Roboto;
     text-align: center;
     position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-20%);
 }
 
 /* Informacion sobre los servicios */
 
-
-
-div.box-servicio-1 {
-    width: 1000px;
-    height: 400px;
-    margin: 10px;
-    position: relative;
-    border-radius: 30px;
-
-    background: rgb(128, 0, 100);
-
-    right: 20%;
-
-    transform: translateX(-20%) translateY();
-}
-
-div.box-servicio-2 {
-    width: 1000px;
-    height: 400px;
-    margin: 10px;
-    position: relative;
-    border-radius: 30px;
-
-    background: rgb(128, 0, 100);
-
-    left: 20%;
-
-    transform: translateX(-20%) translateY();
-}
-
-
-
-
-
 div.box-servicio {
     width: 1000px;
     height: 400px;
-    margin: 10px auto;
-    position: relative;
+    margin: 10px;
     border-radius: 30px;
-
-    background: rgb(128, 0, 100);
+    background: #F8F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 10px 10px 30px #ABB2B9 ;
 }
 
 div img.imagen-de-servicio {
-
-    position: relative;
-    top: 50%;
-    left: 10%;
-
-    transform: translateX(-10%) translateY(-50%);
-
+    margin: 20px;
     width: auto;
     height: auto;
     max-height: 70%;
@@ -118,32 +78,19 @@ div img.imagen-de-servicio {
 }
 
 div p.descripcion-de-servicio {
-    position: relative;
-    top: 50%;
-    left: 50%;
-
-    transform: translateX(-50%) translateY(-50%);
-
-
+    width: max-content;
     font-size: 20px;
     text-align: center;
 }
 
-div.box-servicio div.box-texto {
-
-    background: greenyellow;
-
-    margin: 15px;
-    position: relative;
-    bottom: 100%;
-    left: 90%;
-
+ div.box-texto {
+    /* background: greenyellow; */
+    margin: 20px;
     width: 400px;
     height: 200px;
-
-    transform: translateX(-90%) translateY(100%);
-
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

@@ -10,11 +10,11 @@
         $mensaje = $_POST['mensaje'];
         if(!empty($nombre) && !empty($apellido) && !empty($telefono) && !empty($email) && !empty($asunto) && !empty($mensaje)){
 
-            $mensaje = "Correo de la persona: ".$correo."<br>";
-            $mensaje .= "Nombre: ".$nombre."<br>";
-            $mensaje .= "Apellido: ".$apellido."<br>";
-            $mensaje .= "Telefono: ".$telefono."<br>";
-            $mensaje .= "Mensaje: ".$_POST['mensaje']."<br>";
+            $mensaje = "Correo de la persona: ".$correo."\n";
+            $mensaje .= "Nombre: ".$nombre."\n";
+            $mensaje .= "Apellido: ".$apellido."\n";
+            $mensaje .= "Telefono: ".$telefono."\n";
+            $mensaje .= "Mensaje: ".$_POST['mensaje']."\n";
 
             $header = "From: " . $email . "\r\n";
             $header .= "Reply-To: " . $email . "\r\n";

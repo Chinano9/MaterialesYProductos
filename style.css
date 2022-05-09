@@ -26,6 +26,7 @@
 
 body {
     background: var(--color-secundario);
+    /* background-image: url(res/image/almacenamiento.jpg); */
 }
 
 a {

@@ -24,7 +24,6 @@
         </nav>
         <img class="imagen-fondo" src="../../res/image/almacenamiento.jpg" alt="">
     </header>
-
     <main class="contenido-principal">
 
         <!-- br's inecesarios solamente para que haga un pequeño salto-->
@@ -33,52 +32,70 @@
 
         <!--:::::Barra De Productos:::::-->
         <h2 class="titulo-barra-de-productos">Productos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloremque repellat officia nisi molestiae! Ducimus, incidunt in, at facere vel sit magnam ea maxime, perferendis asperiores reprehenderit beatae amet quasi.</p>
         <nav class="barra-de-productos">
-            <a class="boton-barra-de-productos seleccionado" id="btn-todo" >Todo</a>
-            <a class="boton-barra-de-productos" id="btn-stretch" >Stretch Film</a>
-            <a class="boton-barra-de-productos" id="btn-cintas" >Cintas adhesivas</a>
-            <a class="boton-barra-de-productos" id="btn-identificacion" >Identificación</a> 
-            <a class="boton-barra-de-productos" id="btn-maquinas" >Maquinas emplayadoras</a>
-            <a class="boton-barra-de-productos" id="btn-empaque" >Empaque</a></li>
+            <a class="boton-barra-de-productos seleccionado" id="btn-todo">Todo</a>
+            <a class="boton-barra-de-productos" id="btn-stretch">Stretch Film</a>
+            <a class="boton-barra-de-productos" id="btn-cintas">Cintas adhesivas</a>
+            <a class="boton-barra-de-productos" id="btn-identificacion">Identificación</a>
+            <a class="boton-barra-de-productos" id="btn-maquinas">Maquinas emplayadoras</a>
+            <a class="boton-barra-de-productos" id="btn-empaque">Empaque</a></li>
         </nav>
         <br>
         <!--:::::PRODUCTOS:::::-->
         <div class="contenedor-productos">
             <div class="productos maquinas">
-                <img  src="https://www.almik.com.mx/img/emplayadora-lp-swa-a-arm.jpg" alt="">
+                <img src="../../res/productos/Emplayadora.jpg" alt="">
                 <div class="mensaje-productos">
-                    <h3> Maquinas emplayadoras</h3>
+                        <h3> Maquinas emplayadoras</h3>
                 </div>
             </div>
             <div class="productos cintas">
-                <img src="https://image.made-in-china.com/43f34j00ujgYvJThaLoR/Heat-Sealing-Bag-Making-Vacuum-Sealer-300-Degree-Centigrade-Temperature-and-Heat-Resistance-Silicone-Adhesive-PTFE-Tape.jpg" alt="">
+                <img src="../../res/productos/Cintas.jpg" alt="">
                 <div class="mensaje-productos">
-                    <h3> Cintas Adhesivas</h3>
+                        <h3>Cintas Adhesivas</h3>
                 </div>
             </div>
-            <div class="productos stretch">
-                <img src="https://plastictop.pe/wp-content/uploads/2019/09/strech_film-300x300.jpg" alt="">
+            <div class="productos stretch" onclick="redireccionar('StrechFilm.html')">
+                <img src="../../res/productos/Strech_Film.jpg" alt="">
                 <div class="mensaje-productos">
-                    <h3> Stretch Films </h3>
+                        <h3>Stretch Films</h3>
                 </div>
             </div>
             <div class="productos identificacion">
-                <img src="https://img.directindustry.es/images_di/photo-m2/183228-10913889.jpg" alt="">
+                <img src="../../res/productos/Identificacion.jpg" alt="">
                 <div class="mensaje-productos">
-                    <h3> Identificación</h3>
-                </div>
-            </div>
-        
-            <div class="productos empaque">
-                <img src="https://www.cajacartonembalaje.com/themes/surinnopack/assets/img/home/categories/2.webp" alt="">
-                <div class="mensaje-productos">
-                    <h3> Empaques </h3>
+                        <h3>Identificación</h3>
                 </div>
             </div>
             <div class="productos empaque">
-                <img src="https://www.cajacartonembalaje.com/themes/surinnopack/assets/img/home/categories/2.webp" alt="">
+                <img src="../../res/productos/Cajas.webp" alt="">
                 <div class="mensaje-productos">
-                    <h3> Empaques </h3>
+                        <h3>Empaques</h3>
+                </div>
+            </div>
+            <div class="productos empaque">
+                <img src="../../res/productos/Cajas.webp" alt="">
+                <div class="mensaje-productos">
+                        <h3>Empaques</h3>
+                </div>
+            </div>
+            <div class="productos stretch" onclick="redireccionar('StrechFilm.html')">
+                <img src="../../res/productos/Strech_Film.jpg" alt="">
+                <div class="mensaje-productos">
+                        <h3> Stretch Films</h3>
+                </div>
+            </div>
+            <div class="productos stretch"onclick="redireccionar('StrechFilm.html')">
+                <img src="../../res/productos/Strech_Film.jpg" alt="">
+                <div class="mensaje-productos">
+                        <h3>Stretch Films </h3>
+                </div>
+            </div>
+            <div class="productos stretch" onclick="redireccionar('StrechFilm.html')">
+                <img src="../../res/productos/Strech_Film.jpg" alt="">
+                <div class="mensaje-productos">
+                        <h3>Stretch Films </h3>
                 </div>
             </div>
         </div>
@@ -105,10 +122,13 @@
                 <br>
                 <h2>Redes</h2>
                 <div class="redes-sociales">
-                    <a id="facebook" href="https://www.facebook.com/Materiales-Y-Productos-110852591621435" class="fa fa-facebook"></a>
-                    <a id="instagram" href="https://www.instagram.com/materialesyproductos.oficial/" class="fa fa-instagram "></a>
+                    <a id="facebook" href="https://www.facebook.com/Materiales-Y-Productos-110852591621435"
+                        class="fa fa-facebook"></a>
+                    <a id="instagram" href="https://www.instagram.com/materialesyproductos.oficial/"
+                        class="fa fa-instagram "></a>
                     <a id="twitter" href="#" class="fa fa-twitter"></a>
-                    <a id="youtube" href="https://www.youtube.com/channel/UC4jKJ1SgE5QeI_In6kmz76A/featured" class="fa fa-youtube"></a>
+                    <a id="youtube" href="https://www.youtube.com/channel/UC4jKJ1SgE5QeI_In6kmz76A/featured"
+                        class="fa fa-youtube" target=""></a>
                 </div>
             </div>
         </div>

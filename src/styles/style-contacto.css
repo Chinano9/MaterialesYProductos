@@ -44,16 +44,105 @@ a {
 }
 
 .correo {
-    margin: 100px;
-    border: #eee;
+    margin: 10px;
+    border: rgb(1, 1, 1);
     border-radius: 20px;
 }
-.texto iframe{
-    width:235px;
-    height:590px;
-    padding-left:20px;
+
+#map{
+    margin: 100px;
+    border: 1;
+    border-color: #fff;
+}
+/* Estilos del footer */
+
+.pie-pagina{
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-primario);
+}
+.pie-pagina .informacion-general{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px,0px;
 }
 
-#map {
+.pie-pagina .informacion-general .box{
+    text-align: center;
+}
+
+.pie-pagina .informacion-general .box figure{
+    width: 100%;
     height: 100%;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .informacion-general .box figure img{
+    width: 100px;
+}
+.pie-pagina .informacion-general .box h2{
+    color: var(--color-texto-botones);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .informacion-general .box p{
+    color: var(--color-texto-secundario-oscuro);
+    margin-bottom: 10px;
+}
+.pie-pagina .informacion-general .redes-sociales a{
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--color-texto-botones);
+    margin-right: 10px;
+    background-color: var(--color-primario-hover) ;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .informacion-general .redes-sociales a:hover{
+    color: brown;
+}
+
+.pie-pagina .informacion-general .redes-sociales #youtube:hover{
+    color: red;
+}
+
+.pie-pagina .informacion-general .redes-sociales #facebook:hover{
+    color: #14a2f9;
+}
+
+.pie-pagina .informacion-general .redes-sociales #twitter:hover{
+    color: #00aced;
+}
+
+.pie-pagina .informacion-general .redes-sociales #instagram:hover{
+    color: #d50fc8;
+}
+
+.pie-pagina .informacion-legal{
+    background-color:var(--color-primario-hover) ;
+    padding: 30x, 10px;
+    text-align: center;
+    color:var(--color-texto-botones) ;
+}
+.pie-pagina .informacion-legal small{
+    font-size: 16px;
+}
+/* MediaQuerys */
+@media screen and (max-width: 800px){
+    .pie-pagina .informacion-general{
+        width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px, 0px;
+    }
+}
