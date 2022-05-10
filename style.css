@@ -9,8 +9,8 @@
     --color-texto-primario-oscuro: #fff;
     --color-texto-secundario: #000;
     --color-texto-secundario-oscuro: #eee;
-    --titulos: 30px;
-    --subtitulos: 20px;
+    --titulos: 3em;
+    --subtitulos: 2em;
     --texto: 15px;
     --color-cuadros: #713112;
 }
@@ -106,6 +106,31 @@ a.boton-de-direccion:hover {
 
 
 /* Estilos del cuerpo principal */
+h1{
+    font-size: var(--titulos);
+    text-align: center;
+    position: relative;
+    color: var(--color-texto-primario);
+}
+
+/* lineas acompañadas del titulo como decoracion */
+
+h1::after, h1::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: var(--color-texto-primario);
+    top: 0.6em;
+}
+
+h1::before {
+    left: -150px;
+}
+
+h1::after {
+    right: -150px;
+}
 
 .contenido-principal{
     display: flex;
