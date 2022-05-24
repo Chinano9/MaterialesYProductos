@@ -8,13 +8,40 @@
     flex-direction: column;
 }
 
-
 /* descripcion debajo del titulo */
 
 div p.descripcion-titulo-StrechFilm {
     width: 500px;
     font-size: 20px;
     font-family: Roboto;
+    text-align: justify;
+    position: relative;
+}
+/* tabla */
+.tabla{
+    border-collapse: collapse;
+    padding: auto;
+    margin: 50px;
+}
+th{
+    width: 100px;
+    font-size: 25px;
+    font-family: Roboto;
+    background: var(--color-primario);
+    color: var(--color-secundario);
+}
+td{
+    width: 100px;
+    font-size: 20px;
+    font-family: Roboto;
+    color: var(--color-primario);
     text-align: center;
+}
+/* texto */
+.texto-strech{
+    width: 500px;
+    margin: 10px;
+    font-family: Roboto;
+    text-align: justify;
     position: relative;
 }
