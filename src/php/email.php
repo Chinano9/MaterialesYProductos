@@ -6,9 +6,8 @@
         $telefono = $_POST['telefono'];
         $correo = $_POST['correo'];
         $asunto = $_POST['asunto'];
-        
         $mensaje = $_POST['mensaje'];
-        if(!empty($nombre) && !empty($apellido) && !empty($telefono) && !empty($email) && !empty($asunto) && !empty($mensaje)){
+        if(!empty($nombre) && !empty($apellido) && !empty($telefono) && !empty($correo) && !empty($asunto) && !empty($mensaje)){
 
             $mensaje = "Correo de la persona: ".$correo."\n";
             $mensaje .= "Nombre: ".$nombre."\n";

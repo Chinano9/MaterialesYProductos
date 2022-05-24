@@ -23,11 +23,24 @@ div p.descripcion-titulo-StrechFilm {
     padding: auto;
     margin: 50px;
 }
-th{
+.tabla-2{
+    border-collapse: collapse;
+    padding: auto;
+    margin: 100px;
+}
+.lista{
+    width: 200px;
+    font-size: 25px;
+    font-family: Roboto;
+    background: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+.tabla th{
     width: 100px;
     font-size: 25px;
     font-family: Roboto;
-    background: var(--color-primario);
+    background: var(--color-primario-hover);
     color: var(--color-secundario);
 }
 td{
@@ -38,10 +51,15 @@ td{
     text-align: center;
 }
 /* texto */
-.texto-strech{
-    width: 500px;
-    margin: 10px;
+li{
+    color: var(--color-secundario);
+    text-align: center;
     font-family: Roboto;
-    text-align: justify;
-    position: relative;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 30px;
+    background: var(--color-primario);
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
