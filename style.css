@@ -145,6 +145,7 @@ h1::after {
     color: var(--color-texto-primario);
     margin: 20px 0;
     text-align: center;
+    font-size: 30px;
 }
 
 .contenido-principal p{
@@ -281,3 +282,21 @@ h1::after {
         padding: 35px, 0px;
     }
 }
+/*animacion*/
+/* .titulo-animacion span{
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    background: var(--color-secundario);
+
+    animation: titulo 2.5s infinite alternate;
+}
+
+@keyframes titulo {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+} */
