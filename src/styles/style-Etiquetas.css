@@ -18,31 +18,36 @@ div p.descripcion-titulo-StrechFilm {
     position: relative;
 }
 /* tabla */
-.tabla{
+.tabla-etiqueta{
     border-collapse: collapse;
     padding: auto;
     margin: 50px;
 }
+
 .tabla-2{
     border-collapse: collapse;
     padding: auto;
     margin: 100px;
 }
-.lista{
-    width: 200px;
+
+.lista-Etiqueta{
+    width: 300px;
     font-size: 25px;
     font-family: Roboto;
     background: var(--color-secundario);
     color: var(--color-primario);
+
+    animation: lista-etiqueta 5s;
 }
 
-.tabla th{
-    width: 100px;
+.tabla-etiqueta th{
+    width: 200px;
     font-size: 25px;
     font-family: Roboto;
     background: var(--color-primario-hover);
     color: var(--color-secundario);
 }
+
 td{
     width: 100px;
     font-size: 20px;
@@ -50,6 +55,7 @@ td{
     color: var(--color-primario);
     text-align: center;
 }
+
 /* texto */
 li{
     color: var(--color-secundario);
@@ -63,7 +69,81 @@ li{
     justify-content: center;
     display: flex;
 }
+
 .resaltar-texto{
     color: var(--color-primario);
 }
-/* animacion pocha ajsdhasjkdhasd */
+
+/* tarjeta */
+
+.contenedor-productos-etiqueta {
+    width: 50%;
+    background-color: var(--color-texto-botones);
+    display:grid;
+    grid-template-columns: repeat(2, minmax(20px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-etiqueta {
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(156, 152, 152, 0.8);
+}
+
+.productos-etiqueta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productos-etiqueta .mensaje-productos {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.500);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.productos-etiqueta h3 {
+    color: var(--color-secundario);
+    text-shadow: var(--color-texto-secundario);
+    font-size: 20px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.productos-etiqueta:hover h3 {
+    display: block;
+}
+
+.productos-etiqueta:hover .mensaje-productos {
+    opacity: 1
+}
+
+.oculto {
+    display: none;
+}
+/* animacion */
+@keyframes lista-Etiqueta{
+    from{
+        margin-top: 100%;
+        width: 100%;
+    }
+    to{
+        margin-top: 0%;
+        width: 300px;
+    }
+}

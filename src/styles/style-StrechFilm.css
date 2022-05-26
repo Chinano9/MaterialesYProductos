@@ -28,12 +28,14 @@ div p.descripcion-titulo-StrechFilm {
     padding: auto;
     margin: 100px;
 }
-.lista{
-    width: 200px;
+.lista-Stretch{
+    width: 300px;
     font-size: 25px;
     font-family: Roboto;
     background: var(--color-secundario);
     color: var(--color-primario);
+
+    animation: lista-stretch 5s;
 }
 
 .tabla th{
@@ -57,13 +59,22 @@ li{
     font-family: Roboto;
     margin: 10px;
     font-size: 15px;
-    border-radius: 30px;
+    border-radius: 15px;
     background: var(--color-primario);
     align-items: center;
     justify-content: center;
     display: flex;
 }
-.resaltar-texto{
-    color: var(--color-primario);
-}
 /* animacion pocha ajsdhasjkdhasd */
+@keyframes lista-stretch {
+
+    from {
+      margin-left: 100%;
+      width: 100%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 300px;
+    }
+  }
