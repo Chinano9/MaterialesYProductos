@@ -37,6 +37,10 @@ a {
     color: var(--color-texto);
 }
 
+strong{
+    color: var(--color-primario);
+}
+
 /* Estilos del header (barra de navegacion e imagen) */
 
 header{
