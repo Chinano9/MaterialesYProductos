@@ -57,7 +57,7 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
 
 /* Cada vez que el cursor este encima da informacion del producto */
 .contenedor-productos {
-    width: 79%;
+    width: 90%;
     background-color: var(--color-texto-botones);
     border-radius: 10px;
     display: grid;

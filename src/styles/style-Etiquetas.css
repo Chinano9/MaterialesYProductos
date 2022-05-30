@@ -33,15 +33,11 @@ li {
 /* tarjeta */
 
 .contenedor-productos-etiqueta {
-    width: 50%;
+    width: 76%;
     background-color: var(--color-texto-botones);
-<<<<<<< HEAD
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-=======
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: grid;
-    grid-template-columns: repeat(2, minmax(20px, 1fr));
->>>>>>> 5f124f7589d8e8faa08a7a5d6e7f9ce7e666df12
     justify-content: center;
     align-items: center;
 }
@@ -53,6 +49,7 @@ li {
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    left: 4.75%;
     border-radius: 5px;
     box-shadow: 3px 5px 5px rgba(156, 152, 152, 0.8);
 }
