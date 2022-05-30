@@ -1,4 +1,4 @@
-.box-titulo-StrechFilm {
+.box-titulo-Etiqueta {
     width: 600px;
     height: 200px;
     margin: 15px auto;
@@ -80,7 +80,7 @@ li{
     width: 50%;
     background-color: var(--color-texto-botones);
     display:grid;
-    grid-template-columns: repeat(2, minmax(20px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
     justify-content: center;
     align-items: center;
 }
@@ -145,5 +145,45 @@ li{
     to{
         margin-top: 0%;
         width: 300px;
+    }
+}
+
+/* Configuracion por cambio de pantalla */
+@media screen and (max-width: 1160px) {
+    nav.barra-de-productos {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedor-productos-etiqueta {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width: 864px) {
+
+
+    .contenedor-productos-etiqueta {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}
+@media screen and (max-width: 1160px) {
+    nav.barra-de-productos {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedor-productos-etiqueta2 {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width: 864px) {
+
+
+    .contenedor-productos-etiqueta2 {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
 }

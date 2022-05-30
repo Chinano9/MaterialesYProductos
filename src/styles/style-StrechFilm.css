@@ -66,15 +66,16 @@ li{
     display: flex;
 }
 /* animacion pocha ajsdhasjkdhasd */
-@keyframes lista-stretch {
+/* @keyframes lista-stretch {
 
     from {
-      margin-left: 100%;
-      width: 100%
+
+      margin-left: 60%;
+      width: 400px;
     }
   
     to {
       margin-left: 0%;
       width: 300px;
     }
-  }
+  } */
