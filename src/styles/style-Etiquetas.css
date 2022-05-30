@@ -137,11 +137,3 @@
         grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
 }
-
-@media screen and (max-width: 864px) {
-
-
-    .contenedor-productos-etiqueta2 {
-        grid-template-columns: repeat(1, minmax(300px, 1fr));
-    }
-}
