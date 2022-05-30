@@ -1,5 +1,4 @@
 const boton_todo = document.getElementById("btn-todo");
-const boton_ribbons = document.getElementById("btn-ribbons");
 const ribbons = document.getElementsByClassName("ribbons");
 const boton_cintas = document.getElementById("btn-cintas");
 const cintas = document.getElementsByClassName("cintas");
@@ -13,13 +12,6 @@ boton_todo.addEventListener("click", () => {
         return;
     }
     colocarClaseOculto("todo");
-});
-
-boton_ribbons.addEventListener("click", () => {
-    if (boton_ribbons.classList.contains("seleccionado")) {
-        return;
-    }
-    colocarClaseOculto("ribbons");
 });
 
 boton_cintas.addEventListener("click", () => {
@@ -57,7 +49,6 @@ function colocarClaseOculto(elemento) {
     switch (elemento) {
         case "todo":
             boton_todo.classList.add("seleccionado");
-            boton_ribbons.classList.remove("seleccionado");
             boton_cintas.classList.remove("seleccionado");
             boton_identificacion.classList.remove("seleccionado");
             boton_empaque.classList.remove("seleccionado");
@@ -76,31 +67,10 @@ function colocarClaseOculto(elemento) {
                 element.classList.remove("oculto");
             }
             break;
-        case "ribbons":
-            boton_ribbons.classList.add("seleccionado");
-            boton_todo.classList.remove("seleccionado");
-            boton_cintas.classList.remove("seleccionado");
-            boton_identificacion.classList.remove("seleccionado");
-            boton_empaque.classList.remove("seleccionado");
 
-            //se muestran solo las categorias de stretch
-            for (const element of ribbons) {
-                element.classList.remove("oculto");
-            }
-            for (const element of cintas) {
-                element.classList.add("oculto");
-            }
-            for (const element of identificacion) {
-                element.classList.add("oculto");
-            }
-            for (const element of empaque) {
-                element.classList.add("oculto");
-            }
-            break;
         case "cintas":
             boton_cintas.classList.add("seleccionado");
             boton_todo.classList.remove("seleccionado");
-            boton_ribbons.classList.remove("seleccionado");
             boton_identificacion.classList.remove("seleccionado");
             boton_empaque.classList.remove("seleccionado");
 
@@ -121,13 +91,12 @@ function colocarClaseOculto(elemento) {
         case "etiquetas":
             boton_identificacion.classList.add("seleccionado");
             boton_todo.classList.remove("seleccionado");
-            boton_ribbons.classList.remove("seleccionado");
             boton_cintas.classList.remove("seleccionado");
             boton_empaque.classList.remove("seleccionado");
     
             //se muestran solo las categorias de identificacion  
             for (const element of ribbons) {
-                element.classList.add("oculto");
+                element.classList.remove("oculto");
             }
             for (const element of cintas) {             
                 element.classList.add("oculto");
@@ -142,7 +111,6 @@ function colocarClaseOculto(elemento) {
         case "empaque":
             boton_empaque.classList.add("seleccionado");
             boton_todo.classList.remove("seleccionado");
-            boton_ribbons.classList.remove("seleccionado");
             boton_cintas.classList.remove("seleccionado");
             boton_identificacion.classList.remove("seleccionado");
 

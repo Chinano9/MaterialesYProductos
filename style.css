@@ -24,17 +24,23 @@
     font-family: Roboto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     /* background: var(--color-secundario); */
     background-image: url(res/image/almacenamiento.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a {
     text-decoration: none;
     color: var(--color-texto);
+    scroll-margin-top: 100px;
 }
 
 strong{
@@ -122,6 +128,7 @@ h1{
     text-align: center;
     position: relative;
     color: var(--color-texto-primario);
+    animation: aparicion 1s ease-in-out;
 }
 
 /* lineas acompañadas del titulo como decoracion */
@@ -158,17 +165,53 @@ h1::after {
     font-size: var(--titulos);
     font-weight: bold;
     color: var(--color-texto-primario);
-    margin: 20px 0;
+    /* margin: 20px 0; */
     text-align: center;
     font-size: 30px;
 }
 
 .contenido-principal p{
+    /* width: 80%; este de aqui hace que se vea feo */
+    padding: 2%; /*este de aqui hace que este fixed*/
     font-size: var(--texto);
     color: var(--color-texto-secundario);
     margin: 20px 0;
     text-align: center;
-    width: 60%;
+    
+}
+
+/* Tarjetas general */
+
+.contenido-principal .descripcion-titulo{
+    width: 75%;
+    margin: 3%;
+    padding: 2%;
+    font-size: 20px;
+    font-family: Roboto;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1 1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    color: var(--color-texto-secundario);
+    background-color: var(--color-secundario);
+}
+/* tarjetas de P */
+.contenido-principal .descripcion-titulo p{
+    padding: 2%;
+    justify-items: center;
+    font-size: 15px;
+    font-family: Roboto;
+    text-align: justify;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    color: var(--color-texto-secundario);
+    background-color: var(--color-secundario);
 }
 
 .contenido-principal .contenedor-tarjetas{
@@ -182,12 +225,14 @@ h1::after {
 }
 
 .contenedor-tarjetas .tarjeta{
-    width: 100%;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    width: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .tarjeta h3{
@@ -235,6 +280,7 @@ li {
 
 .pie-pagina{
     bottom: 0;
+    margin-top: 10px;
     width: 100%;
     background-color: var(--color-primario);
 }
@@ -327,3 +373,14 @@ li {
     }
 }
 /*animacion*/
+
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

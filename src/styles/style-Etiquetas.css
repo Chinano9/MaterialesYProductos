@@ -13,22 +13,7 @@
 
 
 /* texto */
-li {
-    color: var(--color-secundario);
-    text-align: center;
-    font-family: Roboto;
-    margin: 10px;
-    font-size: 15px;
-    border-radius: 30px;
-    background: var(--color-primario);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
 
-.resaltar-texto {
-    color: var(--color-primario);
-}
 
 /* tarjeta */
 
@@ -36,14 +21,11 @@ li {
     width: 76%;
     background-color: var(--color-texto-botones);
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    display: grid;
-    grid-template-columns: repeat(2, minmax(20px, 1fr));
     border-radius: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    display: grid;
     justify-content: center;
     align-items: center;
+    justify-items: center;
 }
 
 .productos-etiqueta {
@@ -53,7 +35,6 @@ li {
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    left: 4.75%;
     border-radius: 5px;
     box-shadow: 3px 5px 5px rgba(156, 152, 152, 0.8);
 }
@@ -77,6 +58,19 @@ li {
     overflow: center;
     opacity: 0;
     transition: 0.5s;
+}
+
+.tipo-etiqueta{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.tipo-etiqueta p strong{
+    text-align: center;
 }
 
 .productos-etiqueta h3 {

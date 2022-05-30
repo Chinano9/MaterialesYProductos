@@ -134,8 +134,6 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
 }
 
 @media screen and (max-width: 864px) {
-
-
     .contenedor-productos {
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }

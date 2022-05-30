@@ -10,7 +10,7 @@
     <title>Formulario</title>
 </head>
 
-<body>
+<body style="background:none;">
     <form action="" method="post">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" placeholder="Nombre">
