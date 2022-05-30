@@ -10,54 +10,10 @@
 
 /* descripcion debajo del titulo */
 
-div p.descripcion-titulo-StrechFilm {
-    width: 500px;
-    font-size: 20px;
-    font-family: Roboto;
-    text-align: justify;
-    position: relative;
-}
-/* tabla */
-.tabla-etiqueta{
-    border-collapse: collapse;
-    padding: auto;
-    margin: 50px;
-}
 
-.tabla-2{
-    border-collapse: collapse;
-    padding: auto;
-    margin: 100px;
-}
-
-.lista-Etiqueta{
-    width: 300px;
-    font-size: 25px;
-    font-family: Roboto;
-    background: var(--color-secundario);
-    color: var(--color-primario);
-
-    animation: lista-etiqueta 5s;
-}
-
-.tabla-etiqueta th{
-    width: 200px;
-    font-size: 25px;
-    font-family: Roboto;
-    background: var(--color-primario-hover);
-    color: var(--color-secundario);
-}
-
-td{
-    width: 100px;
-    font-size: 20px;
-    font-family: Roboto;
-    color: var(--color-primario);
-    text-align: center;
-}
 
 /* texto */
-li{
+li {
     color: var(--color-secundario);
     text-align: center;
     font-family: Roboto;
@@ -70,7 +26,7 @@ li{
     display: flex;
 }
 
-.resaltar-texto{
+.resaltar-texto {
     color: var(--color-primario);
 }
 
@@ -79,8 +35,13 @@ li{
 .contenedor-productos-etiqueta {
     width: 50%;
     background-color: var(--color-texto-botones);
+<<<<<<< HEAD
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+=======
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 1fr));
+>>>>>>> 5f124f7589d8e8faa08a7a5d6e7f9ce7e666df12
     justify-content: center;
     align-items: center;
 }
@@ -136,13 +97,15 @@ li{
 .oculto {
     display: none;
 }
+
 /* animacion */
-@keyframes lista-Etiqueta{
-    from{
+@keyframes lista-Etiqueta {
+    from {
         margin-top: 100%;
         width: 100%;
     }
-    to{
+
+    to {
         margin-top: 0%;
         width: 300px;
     }

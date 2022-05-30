@@ -17,43 +17,53 @@ div p.descripcion-titulo-StrechFilm {
     text-align: justify;
     position: relative;
 }
+
 /* tabla */
-.tabla{
+.tabla {
     border-collapse: collapse;
     padding: auto;
     margin: 50px;
 }
-.tabla-2{
+
+.tabla-2 {
     border-collapse: collapse;
     padding: auto;
     margin: 100px;
 }
-.lista-Stretch{
+
+.lista-Stretch {
     width: 300px;
     font-size: 25px;
     font-family: Roboto;
-    background: var(--color-secundario);
-    color: var(--color-primario);
-
-    animation: lista-stretch 5s;
+    background: var(--color-primario);
+    color: var(--color-secundario);
+    border-radius: 10px;
+    animation: lista-stretch 2s;
 }
 
-.tabla th{
+.tabla {
+    background-color: var(--color-secundario);
+}
+
+.tabla th {
     width: 100px;
     font-size: 25px;
     font-family: Roboto;
     background: var(--color-primario-hover);
     color: var(--color-secundario);
 }
-td{
+
+td {
     width: 100px;
     font-size: 20px;
     font-family: Roboto;
     color: var(--color-primario);
     text-align: center;
 }
+
 /* texto */
-li{
+
+li {
     color: var(--color-secundario);
     text-align: center;
     font-family: Roboto;
@@ -65,17 +75,25 @@ li{
     justify-content: center;
     display: flex;
 }
+
 /* animacion pocha ajsdhasjkdhasd */
 /* @keyframes lista-stretch {
 
     from {
+<<<<<<< HEAD
 
       margin-left: 60%;
       width: 400px;
+=======
+        opacity: 0;
+>>>>>>> 5f124f7589d8e8faa08a7a5d6e7f9ce7e666df12
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 300px;
+        opacity: 1;
     }
+<<<<<<< HEAD
   } */
+=======
+}
+>>>>>>> 5f124f7589d8e8faa08a7a5d6e7f9ce7e666df12
