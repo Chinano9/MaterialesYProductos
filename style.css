@@ -204,6 +204,32 @@ h1::after {
     height: 250px;
     width: 250px;
 }
+/* Listas universal */
+ul{
+    width: 300px;
+    font-size: 25px;
+    font-family: Roboto;
+    background: var(--color-primario);
+    color: var(--color-secundario);
+    border-radius: 10px;
+    animation: lista-stretch 2s;
+}
+
+li {
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: Roboto;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    background: var(--color-primario);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
 
 /* Estilos del footer */
 
@@ -301,20 +327,3 @@ h1::after {
     }
 }
 /*animacion*/
-/* .titulo-animacion span{
-    position: absolute;
-    right: 0%;
-    width: 0%;
-    background: var(--color-secundario);
-
-    animation: titulo 2.5s infinite alternate;
-}
-
-@keyframes titulo {
-    from{
-        width: 100%;
-    }
-    to{
-        width: 0%;
-    }
-} */
