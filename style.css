@@ -138,7 +138,7 @@ h1::after, h1::before {
     position: absolute;
     width: 120px;
     height: 3px;
-    background-color: var(--color-texto-primario);
+    background-color: var(--color-primario);
     top: 0.6em;
 }
 
@@ -246,8 +246,8 @@ h1::after {
 }
 
 .tarjeta-imagen img{
-    height: 250px;
     width: 250px;
+    height: 250px;
 }
 /* Listas universal */
 ul{
@@ -272,6 +272,7 @@ li {
     justify-content: center;
     display: flex;
 }
+
 
 
 
