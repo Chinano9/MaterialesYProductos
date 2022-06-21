@@ -67,7 +67,7 @@ function colocarClaseOculto(elemento) {
                 element.classList.remove("oculto");
             }
             break;
-
+            
         case "cintas":
             boton_cintas.classList.add("seleccionado");
             boton_todo.classList.remove("seleccionado");

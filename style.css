@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --color-primario: #17223B;
+    --color-primario: #182955;
     --color-primario-hover: #12192c;
     --color-secundario: #eee;
     --color-texto-botones: #EEE;
@@ -29,12 +29,26 @@ html{
 }
 
 body {
-    /* background: var(--color-secundario); */
-    background-image: url(res/image/almacenamiento.jpg);
+    margin: 0;
+    background-image: url(res/image/fondo-almacen.jpg);
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(90deg,#2e92cc, #5f4e27);
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 a {
@@ -60,7 +74,7 @@ nav.barra-de-navegacion {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--color-primario);
+    background: linear-gradient(30deg,#182955, #17223B);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +115,7 @@ img.imagen-fondo {
 a.boton-de-direccion {
     padding: 20px 10px;
     /*espacio alrededor texto*/
-    background-color: var(--color-primario);
+    background-color: inherit;
     /*color botón*/
     color: var(--color-texto);
     /*color texto*/
@@ -127,7 +141,7 @@ h1{
     font-size: var(--titulos);
     text-align: center;
     position: relative;
-    color: var(--color-texto-primario);
+    color: var(--color-primario);
     animation: aparicion 1s ease-in-out;
 }
 
@@ -153,8 +167,8 @@ h1::after {
 /* Estilos del cuerpo principal */
 
 
-
 .contenido-principal{
+    background-color: var(--color-secundario);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,12 +197,13 @@ h1::after {
 /* Tarjetas general */
 
 .contenido-principal .descripcion-titulo{
-    width: 75%;
-    margin: 3%;
-    padding: 2%;
+    width: 100%;
+    border-radius: 0;
+    background-color: var(--color-secundario);
+    padding-left: 100px;
+    padding-right: 100px;
     font-size: 20px;
     font-family: Roboto;
-    border-radius: 10px;
     text-align: center;
     display: grid;
     grid-template-columns: 1 1;
@@ -199,6 +214,7 @@ h1::after {
     color: var(--color-texto-secundario);
     background-color: var(--color-secundario);
 }
+
 /* tarjetas de P */
 .contenido-principal .descripcion-titulo p{
     padding: 2%;
@@ -273,14 +289,10 @@ li {
     display: flex;
 }
 
-
-
-
 /* Estilos del footer */
 
 .pie-pagina{
     bottom: 0;
-    margin-top: 10px;
     width: 100%;
     background-color: var(--color-primario);
 }

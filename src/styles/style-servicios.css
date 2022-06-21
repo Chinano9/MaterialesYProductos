@@ -3,6 +3,82 @@
     padding: 0;
 }
 
+.contenedor_prueba{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.contenedor_prueba figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.contenedor_prueba figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor_prueba figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 41, 85, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor_prueba figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor_prueba figure:hover > .capa h3{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.contenedor_prueba figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* div contenedor del h1 y p del titulo y descripcion */
 
 .box-titulo-servicios {
@@ -13,6 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-items: center;
     flex-direction: column;
 }
 
@@ -31,7 +108,7 @@ div p.descripcion-titulo-servicios {
 div.box-servicio {
     width: 1000px;
     height: 400px;
-    margin: 10px;
+    margin: 60px;
     border-radius: 30px;
     background: #F8F9F9;
     display: flex;
