@@ -1,5 +1,9 @@
 *{box-sizing:border-box;}
 
+body::before{
+	display: none;
+}
+
 form{
 	width:300px;
 	padding:16px;

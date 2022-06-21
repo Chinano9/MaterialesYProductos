@@ -3,32 +3,31 @@
     padding: 0;
 }
 
-.contenedor_prueba{
+.contenedor_servicios{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    height: 500px;
+    margin-bottom: 20px;
 }
 
-.contenedor_prueba figure{
+.contenedor_servicios figure{
     position: relative;
-    height: 250px;
-    width: 350px;
+    height: 400px;
+    width: 650px;
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
     cursor: pointer;
 }
 
-.contenedor_prueba figure img{
+.contenedor_servicios figure img{
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
 }
 
-.contenedor_prueba figure .capa{
+.contenedor_servicios figure .capa{
     position: absolute;
     top: 0;
     width: 100%;
@@ -40,109 +39,33 @@
     text-align: center;
 }
 
-.contenedor_prueba figure:hover > .capa{
+.contenedor_servicios figure:hover > .capa{
     opacity: 1;
     visibility: visible;
 }
 
-.contenedor_prueba figure:hover > .capa h3{
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
-
-.contenedor_prueba figure .capa h3{
-    color: #fff;
-    font-weight: 400;
+.contenedor_servicios figure:hover > .capa h3{
+    margin-top: 120px;
     margin-bottom: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* div contenedor del h1 y p del titulo y descripcion */
-
-.box-titulo-servicios {
-    width: 600px;
-    height: 200px;
-    margin: 10px auto;
-    /* background-color: green; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    flex-direction: column;
+.contenedor_servicios figure:hover > img{
+    transform: scale(1.3);
 }
 
-/* descripcion debajo del titulo */
-
-div p.descripcion-titulo-servicios {
-    width: 500px;
-    font-size: 20px;
-    font-family: Roboto;
-    text-align: center;
-    position: relative;
+.contenedor_servicios figure .capa h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 250px;
+    transition: all 500ms ease-out;
 }
 
-/* Informacion sobre los servicios */
-
-div.box-servicio {
-    width: 1000px;
-    height: 400px;
-    margin: 60px;
-    border-radius: 30px;
-    background: #F8F9F9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    box-shadow: 10px 10px 30px #ABB2B9 ;
+.contenedor_servicios figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
-
-div img.imagen-de-servicio {
-    margin: 20px;
-    width: auto;
-    height: auto;
-    max-height: 70%;
-    max-width: 50%;
-}
-
-div p.descripcion-de-servicio {
-    width: max-content;
-    font-size: 20px;
-    text-align: center;
-}
-
-div.box-texto {
-    /* background: greenyellow; */
-    margin: 20px;
-    width: 400px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-/* No toquen nada perras */
