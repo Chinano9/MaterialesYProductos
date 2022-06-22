@@ -1,0 +1,77 @@
+.contenedor-productos-doblec {
+    width: 76%;
+    background-color: var(--color-texto-botones);
+    display:grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.productos-doblec {
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(156, 152, 152, 0.8);
+}
+
+.productos-doblec img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.productos-doblec .mensaje-productos {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.500);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.productos-doblec h3 {
+    color: var(--color-secundario);
+    text-shadow: var(--color-texto-secundario);
+    font-size: 20px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.productos-doblec:hover h3 {
+    display: block;
+}
+
+.productos-doblec:hover .mensaje-productos {
+    opacity: 1
+}
+
+.oculto {
+    display: none;
+}
+
+/*texto*/
+
+.tipo-etiqueta{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.tipo-etiqueta p strong{
+    text-align: center;
+}
