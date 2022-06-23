@@ -18,7 +18,7 @@
 /* tarjeta */
 
 .contenedor-productos-etiqueta {
-    width: 76%;
+    width: 50%;
     background-color: var(--color-texto-botones);
     display:grid;
     border-radius: 10px;
