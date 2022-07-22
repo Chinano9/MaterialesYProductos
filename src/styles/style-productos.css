@@ -113,7 +113,7 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
 }
 
 .productos:hover .mensaje-productos {
-    opacity: 1
+    opacity: 1;
 }
 
 .oculto {

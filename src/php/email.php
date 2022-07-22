@@ -27,7 +27,7 @@
             }
 
         }else{
-            echo "Por favor, rellene todos los campos";
+            echo "<script>alert('Por favor rellene todos los campos del formulario')</script>";
         }
     }
 ?>  

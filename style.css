@@ -106,6 +106,18 @@ img.imagen-fondo {
     width: 100%;
 }
 
+.contenedor-hamburguesa{
+    margin-right: 5px;
+    display: none;
+}
+.contenedor-hamburguesa .linea{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 2px;
+    display: inherit;
+    background-color: white;
+}
+
 .contenedor-botones {
     display: flex;
     flex-direction: row;
@@ -244,7 +256,7 @@ h1::after {
 .contenedor-tarjetas .tarjeta{
     background-color: var(--color-secundario);
     border-radius: 10px;
-    width: 70vh;
+    /* width: 70vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,13 +280,14 @@ h1::after {
 }
 /* Listas universal */
 ul{
-    width: 300px;
+    width: 40vh;
     font-size: 25px;
     font-family: Roboto;
     background: var(--color-primario);
     color: var(--color-secundario);
     border-radius: 10px;
     animation: lista-stretch 2s;
+    text-align: center;
 }
 
 li {
@@ -365,16 +378,43 @@ li {
     font-size: 16px;
 }
 /* MediaQuerys */
+@media screen and (max-width: 864px) {
+}
+
 @media screen and (max-width: 800px){
-    .pie-pagina .informacion-general{
-        width: 50%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px, 0px;
-    }
 
     h1::after, h1::before {
         display: none;
+    }
+    .pie-pagina .informacion-general{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 5px;
+    }
+    .redes-sociales{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .contenido-principal p{
+        padding: 0
+    }
+    .contenido-principal .descripcion-titulo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .contenedor-botones{
+        display: none;
+    }
+    .contenedor-hamburguesa{
+        display: block;
     }
 }
 /*animacion*/
@@ -388,8 +428,4 @@ li {
         opacity: 1;
         transform: translateY(0px);
     }
-}
-
-@media screen and (max-width: 864px) {
-    
 }
