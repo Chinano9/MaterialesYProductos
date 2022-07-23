@@ -167,7 +167,7 @@ h1{
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: #eee;
+    background-color: rgb(223, 219, 219);
     z-index: 100;
 }
 
@@ -427,7 +427,9 @@ li {
 
 @media screen and (max-width: 520px){
     .contenido-principal p{
-        padding: 0
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .contenido-principal .descripcion-titulo {
         padding-left: 0;
