@@ -11,39 +11,38 @@ boton_todo.addEventListener("click", () => {
     if (boton_todo.classList.contains("seleccionado")) {
         return;
     }
-    colocarClaseOculto("todo");
+    ocularClase("todo");
 });
 
 boton_cintas.addEventListener("click", () => {
     if (boton_cintas.classList.contains("seleccionado")) {
         return;
     }
-    colocarClaseOculto("cintas");
+    ocularClase("cintas");
 });
 
 boton_identificacion.addEventListener("click", () => {
     if (boton_identificacion.classList.contains("seleccionado")) {
         return;
     }
-    colocarClaseOculto("etiquetas");
+    ocularClase("etiquetas");
 });
 
 boton_empaque.addEventListener("click", () => {
     if (boton_empaque.classList.contains("seleccionado")) {
         return;
     }
-    colocarClaseOculto("empaque");
+    ocularClase("empaque");
 });
 
 // Redireccionar a un producto.
 
 
-//esta funcion coloca la clase "seleccionada", lo cual hace que el boton se muestre como seleccionado
-//para que el usuario pueda saber que elemento selecciono
-//parametro: nombre del elemento
-//retorno: void
-//ejemplo: colocarClaseOculto("todo");
-function colocarClaseOculto(elemento) {
+/**
+ * Esta funcion oculta los elementos no seleccionados, y muestra los seleccionados
+ * @param {string} elemento nombre de la clase del elemento que se quiere ocultar
+ */
+function ocularClase(elemento) {
     switch (elemento) {
         case "todo":
             boton_todo.classList.add("seleccionado");
@@ -65,7 +64,7 @@ function colocarClaseOculto(elemento) {
                 element.classList.remove("oculto");
             }
             break;
-            
+
         case "cintas":
             boton_cintas.classList.add("seleccionado");
             boton_todo.classList.remove("seleccionado");
@@ -91,12 +90,12 @@ function colocarClaseOculto(elemento) {
             boton_todo.classList.remove("seleccionado");
             boton_cintas.classList.remove("seleccionado");
             boton_empaque.classList.remove("seleccionado");
-    
+
             //se muestran solo las categorias de identificacion  
             for (const element of ribbons) {
                 element.classList.remove("oculto");
             }
-            for (const element of cintas) {             
+            for (const element of cintas) {
                 element.classList.add("oculto");
             }
             for (const element of identificacion) {
