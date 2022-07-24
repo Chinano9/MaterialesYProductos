@@ -158,9 +158,10 @@ h1{
 .menu-responsivo{
     text-align: center;
     position: fixed;
-    right: 0;
+    left: 0;
     top: 60px;
     opacity: 0;
+    visibility: hidden;
     width: 100%;
     display: flex;
     align-content: center;
@@ -180,6 +181,7 @@ h1{
 }
 .mostrar{
     visibility: hidden;
+    opacity: 0;
     transition: mostrar .5s linear ;
 }
 
@@ -188,7 +190,7 @@ h1{
 h1::after, h1::before {
     content: "";
     position: absolute;
-    width: 120px;
+    width: 110px;
     height: 3px;
     background-color: var(--color-primario);
     top: 0.6em;
@@ -272,7 +274,7 @@ h1::after {
     display: grid;
     justify-content: center;
     vertical-align: middle;
-    grid-template-columns: repeat(auto-fit, minmax( 1fr));
+    grid-template-columns: repeat(auto-fit, minmax( 200px, 1fr));
     justify-items: center;
     align-items: center;
     width: 100%;
@@ -306,7 +308,7 @@ h1::after {
 }
 /* Listas universal */
 ul{
-    width: 40vh;
+    /* width: 40vh; */
     font-size: 25px;
     font-family: Roboto;
     background: var(--color-primario);
@@ -405,6 +407,9 @@ li {
 }
 /* MediaQuerys */
 @media screen and (max-width: 864px) {
+    h1::after, h1::before{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px){

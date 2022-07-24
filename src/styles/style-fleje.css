@@ -3,7 +3,7 @@
     background-color: var(--color-texto-botones);
     display:grid;
     border-radius: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -65,7 +65,7 @@
 
 .tipo-etiqueta{
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
     justify-items: center;

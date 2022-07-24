@@ -61,7 +61,7 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
     background-color: var(--color-texto-botones);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -129,12 +129,12 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
     }
 
     .contenedor-productos {
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
 }
 
 @media screen and (max-width: 864px) {
     .contenedor-productos {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
