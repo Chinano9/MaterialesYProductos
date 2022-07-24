@@ -311,6 +311,7 @@ ul{
     /* width: 40vh; */
     margin-bottom: 10px;
     font-size: 25px;
+    list-style: none;
     font-family: Roboto;
     background: var(--color-primario);
     color: var(--color-secundario);
@@ -321,6 +322,7 @@ ul{
 
 li {
     margin: 10px;
+    list-style: none;
     font-size: 15px;
 }
 
