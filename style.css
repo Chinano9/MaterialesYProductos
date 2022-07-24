@@ -302,13 +302,14 @@ h1::after {
 }
 
 .tarjeta-imagen img{
-    width: 250px;
+    width: 200px;
     max-height: 250px;
     height: auto;
 }
 /* Listas universal */
 ul{
     /* width: 40vh; */
+    margin-bottom: 10px;
     font-size: 25px;
     font-family: Roboto;
     background: var(--color-primario);

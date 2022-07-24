@@ -1,18 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.contenedor_servicios{
-    width: 100%;
+.contenedor_servicios {
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
-    margin-bottom: 20px;
 }
 
-.contenedor_servicios figure{
+.contenedor_servicios figure {
     position: relative;
     height: 400px;
     width: 650px;
@@ -21,13 +20,13 @@
     cursor: pointer;
 }
 
-.contenedor_servicios figure img{
-    /* width: 100%; */
-    height: 100%;
+.contenedor_servicios figure img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
     transition: all 500ms ease-out;
 }
 
-.contenedor_servicios figure .capa{
+.contenedor_servicios figure .capa {
     position: absolute;
     top: 0;
     width: 100%;
@@ -39,21 +38,21 @@
     text-align: center;
 }
 
-.contenedor_servicios figure:hover > .capa{
+.contenedor_servicios figure:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
 
-.contenedor_servicios figure:hover > .capa h3{
+.contenedor_servicios figure:hover>.capa h3 {
     margin-top: 120px;
     margin-bottom: 50px;
 }
 
-.contenedor_servicios figure:hover > img{
+.contenedor_servicios figure:hover>img {
     transform: scale(1.3);
 }
 
-.contenedor_servicios figure .capa h3{
+.contenedor_servicios figure .capa h3 {
     color: #fff;
     font-weight: 600;
     font-size: 25px;
@@ -61,11 +60,27 @@
     transition: all 500ms ease-out;
 }
 
-.contenedor_servicios figure .capa p{
+.contenedor_servicios figure .capa p {
     color: #fff;
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
     max-width: 600px;
     margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+
+    .contenedor_servicios figure:hover>.capa h3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 280px) {
+    .contenedor_servicios figure:hover>.capa h3 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
 }
