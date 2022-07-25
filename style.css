@@ -429,7 +429,9 @@ li {
         display: none;
     }
 }
+/*tabla*/
 
+/*Querys*/
 @media screen and (max-width: 800px){
 
     h1::after, h1::before {
@@ -472,6 +474,7 @@ li {
         opacity: 1;
     }
 }
+
 /*animacion*/
 
 @keyframes aparicion{

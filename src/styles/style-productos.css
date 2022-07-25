@@ -70,6 +70,10 @@ nav.barra-de-productos a.boton-barra-de-productos.seleccionado {
 .productos {
     width: 90%;
     height: 90%;
+    max-width: 310px;
+    min-width: 190px;
+    max-height: 240px;
+    min-height: 170px;
     text-align: center;
     overflow: hidden;
     cursor: pointer;

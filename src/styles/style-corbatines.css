@@ -75,3 +75,13 @@
 .tipo-etiqueta p strong{
     text-align: center;
 }
+/*Tabla*/
+@media screen and (max-width: 400px) {
+
+    div .out-of-table {
+
+        width: 90%;
+
+    }
+
+}
