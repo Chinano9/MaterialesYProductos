@@ -65,8 +65,8 @@
 /*texto*/
 
 .tipo-etiqueta{
-    display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
     

@@ -231,7 +231,7 @@ h1::after {
     font-size: var(--texto);
     color: var(--color-texto-secundario);
     margin: 20px 0;
-    text-align: center;
+    text-align: justify;
     
 }
 
@@ -254,6 +254,21 @@ h1::after {
     color: var(--color-texto-secundario);
     background-color: var(--color-secundario);
 }
+/*Tarjeta de Titulo*/
+.contenido-principal .descripcion-titulo-pag{
+    width: 100%;
+    border-radius: 0;
+    background-color: var(--color-secundario);
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    font-family: Roboto;
+    text-align: center;
+    position: relative;
+    color: var(--color-texto-secundario);
+    background-color: var(--color-secundario);
+}
+
 
 /* tarjetas de P */
 .contenido-principal .descripcion-titulo p{
